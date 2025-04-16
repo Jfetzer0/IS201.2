@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The First Page</title>
+  <link rel="stylesheet" type="text/css" href="Styles/Scratchstyles.css">
+</head>
+<body>
+    <div class="common header">My Hobby</div>
+    <nav>
+        <a href="startbootstrap-grayscale-gh-pages/Bootstrap.html">My Resume</a>
+        <a href="index.html">My Hobby</a>
+        <a href="game/numbergenerator.html">Number Generator</a>
+    </nav>
+    <div class="common mainbody">
+      <h3>My Favorite Hobbies</h3>
+      <ul>
+        <li>Pickleball</li>
+        <li>Skiing</li> 
+        <li>Wakeboarding</li>
+      </ul>
+
+      <p>My favorite hobby right now is pickleball</p>
+
+      <h3>What is Pickleball?</h3>
+      <p>Pickleball is fun, social, and friendly! The rules are simple and the game is easy for beginners to learn, but can develop into a fast-paced, competitive game.</p>
+    
+      <h3>Brief History</h3>
+      <p>Pickleball was invented in 1965 on Bainbridge Island, just a short ferry ride from Seattle, Washington. Three dads—Joel Pritchard, Bill Bell, and Barney McCallum—whose kids were bored with their usual summertime activities, are credited with creating the game.
+        Pickleball has since evolved from simple, handmade equipment and basic rules into a popular sport across the U.S. and Canada. The game is also growing internationally, with many European and Asian countries adding courts.
+        From 2020 to 2022, the pandemic encouraged outdoor activities, and pickleball’s easy learning curve made it especially accessible, contributing to its rapid growth.</p>
+      
+      <button class="fact-button" onclick="showFact()">Show a Pickleball Tip</button>
+      <p id="fact"></p>
+      
+      <script>
+        function showFact() {
+          const facts = [
+            "Stay out of the kitchen!",
+            "Always be ready for a dink battle.",
+            "Use the third shot drop wisely.",
+            "Communication is key in doubles.",
+            "Small, quick steps. Stay light on your feet.",
+            "Controlled shots win more games than power shots.",
+            "Don’t worry about power—focus on placement and consistency."
+          ];
+          const random = facts[Math.floor(Math.random() * facts.length)];
+          document.getElementById("fact").innerText = random;
+        }
+      </script>
+
+          <h2 id="how-to-play">Here's how you play</h2>
+          <p style="font-style: italic;">Want to skip to the video? <a style="color: #45aaf3;" href="#how-to-play">Click here</a>!</p>
+      <div class="video-section" style="text-align: center;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kqLRRNOpe8U" allowfullscreen style="border: none; border-radius: 10px;"></iframe>
+              <p style="margin-top: 10px;">
+            <a href="https://usapickleball.org/what-is-pickleball/" target="_blank" style="color: #45aaf3; font-weight: bold; text-decoration: underline;">
+                Learn more here
+            </a>
+              </p>
+      </div>
+  
+  <!-- Tableau Embed Section -->
+  <div class="tableau-wrapper">
+      <div class="tableauPlaceholder" id="viz1744654806929" style="position: relative;">
+          <noscript><a href="#"><img alt="State of the World’s Children" src="https://public.tableau.com/static/images/UN/UNICEFSOWC2016/StateoftheWorldsChildren/1_rss.png" style="border: none" /></a></noscript>
+          <object class="tableauViz" style="display:none;">
+              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+              <param name="embed_code_version" value="3" />
+              <param name="site_root" value="" />
+              <param name="name" value="UNICEFSOWC2016/StateoftheWorldsChildren" />
+              <param name="tabs" value="no" />
+              <param name="toolbar" value="yes" />
+              <param name="static_image" value="https://public.tableau.com/static/images/UN/UNICEFSOWC2016/StateoftheWorldsChildren/1.png" />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+          </object>
+      </div>
+  </div>
+  
+  <script type="text/javascript">
+      var divElement = document.getElementById('viz1744654806929');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';
+      vizElement.style.height='100%';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+    </div>
+    <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; My Hobby 2025</div></footer>
+</body>
+</html>

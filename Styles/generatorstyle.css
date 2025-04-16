@@ -1,0 +1,132 @@
+/* Common styles for the page */
+.common {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.header {
+  background-color: #2c3e50; /* Darker header color */
+  color: #ecf0f1; /* Light text for contrast */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 20px 0;
+  font-size: 2rem; /* Slightly larger header text */
+  letter-spacing: 1px; /* Added spacing for better readability */
+  text-transform: uppercase; /* Making the header text more impactful */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #34495e; /* Dark gray-blue background */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  font-family: 'Press Start 2P', cursive;
+}
+
+.nav-link {
+  color: #ecf0f1; /* Light color text for good contrast */
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: capitalize; /* Text looks more natural */
+}
+
+.nav-link:hover {
+  background-color: #2980b9; /* Soft blue background on hover */
+  color: #fff; /* Text color changes to white for better contrast */
+}
+
+.nav-link:active {
+  background-color: #1abc9c; /* Greenish hue when link is clicked */
+}
+
+/* Page layout styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.common.mainbody {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  padding: 30px;
+  background: linear-gradient(to bottom, #fff1eb, #ace0f9);
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Styling for input and buttons */
+input[type="number"], button {
+  padding: 12px 18px;
+  font-size: 16px;
+  margin: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button.btn-primary {
+  background-color: #e67e22; /* Warm orange color */
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #d35400; /* Darker orange on hover */
+}
+
+button.btn-secondary {
+  background-color: #3498db; /* Blue color */
+  border: none;
+}
+
+button.btn-secondary:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Style for message box */
+.message-box {
+  padding: 10px;
+  margin-top: 10px;
+  display: none;
+  font-weight: bold;
+}
+
+/* Success message style */
+.message-box.success {
+  background-color: #2ecc71; /* Green success background */
+  color: white;
+}
+
+/* Error message style */
+.message-box.error {
+  background-color: #e74c3c; /* Red error background */
+  color: white;
+}
+
+/* Warning message style */
+.message-box.warning {
+  background-color: #f39c12; /* Yellow warning background */
+  color: white;
+}
